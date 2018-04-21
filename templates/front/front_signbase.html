@@ -1,0 +1,32 @@
+{% from 'common/_macros.html' import static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}</title>
+
+    <script src="https://cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.min.js"></script>
+    <link rel="stylesheet" href="{{ static('front/css/front_signbase.css') }}">
+    {% include 'common/_heads.html' %}
+    {% block head %}{% endblock %}
+
+</head>
+<body>
+<div class="outter_box">
+    <div class="logo_box">
+        <a href="/">
+            <img src="{{ static('common/images/logo.png') }}" alt="">
+        </a>
+    </div>
+    <h2 class="page_title">{% block h2_block %}{% endblock %}</h2>
+
+    <div class="form-box">
+
+        {% block sign_box %}{% endblock %}
+    </div>
+
+
+</div>
+
+</body>
+</html>
