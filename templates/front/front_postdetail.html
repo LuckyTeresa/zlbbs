@@ -15,8 +15,8 @@
         <h2>{{ post.title }}</h2>
         <p class="post-info-group">
             <span>发表时间:{{ post.create_time }}</span>
-            <span>作者:{{ post.author }}</span>
-            <span>版块:{{ post.board }}</span>
+            <span>作者:{{ post.author.username }}</span>
+            <span>版块:{{ post.board.name }}</span>
             <span>阅读数:{{ post.read_count }}</span>
             <span>评论数:0</span>
         </p>

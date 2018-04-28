@@ -1,0 +1,9 @@
+                    
+前台用户:  
+    username : han
+    password : 111111
+    telephone: 13554541538
+
+后台用户:
+    mail     : 1300067653@qq.com
+    password : 111111

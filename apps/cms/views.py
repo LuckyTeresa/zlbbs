@@ -240,7 +240,7 @@ def email_captcha():
     #     mail.send(message)
     # except:
     #     return restful.sever_error()
-    send_mail.delay('Python论坛邮箱验证码',[email],'你的验证码是:%s'%captcha)
+    send_mail.delay('小木虫论坛邮箱验证码',[email],'你的验证码是:%s'%captcha)
     zlcache.set(email,captcha)
     return restful.success()
 

@@ -1,7 +1,7 @@
 {% extends 'front/front_base.html' %}
 {% from 'common/_macros.html' import static %}
 {% block title %}
-知了课堂Python论坛
+小木虫论坛
 {% endblock %}
 {% block head %}
     <style>
@@ -85,7 +85,7 @@
             <li>
             <div class="author-avatar-group">
 
-                <img src="{{ post.author.avatar or url_for('static',filename='common/images/logo.png') }}" alt="">
+                <img src="{{ post.author.avatar or url_for('static',filename='common/images/logo.jpg') }}" alt="">
             </div>
                 <div class="post-info-group">
                 <p class="post-title">
